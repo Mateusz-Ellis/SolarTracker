@@ -86,8 +86,8 @@ int __io_putchar(int ch){
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	//int32_t CH1_DC = 100000;
-	//int32_t CH2_DC = 133000;
+	int32_t CH1_DC = 100000;
+	int32_t CH2_DC = 133000;
 	//int up1 = 1;
 	//int up2 = 1;
 	uint32_t value[5];
@@ -163,6 +163,7 @@ int main(void)
 	  //swprintf(m_reportFileName, L"%d", robert);
 	  //hagl_put_text(m_reportFileName, 40, 55, YELLOW, font6x9);
 
+	  /*
 	  int robert1 = (int)value[0];
 	  int robert2 = (int)value[1];
 	  int robert3 = (int)value[2];
@@ -190,10 +191,10 @@ int main(void)
 
 	  lcd_copy();
 	  HAL_Delay(1000);
+	  */
 
-	  /*
+
 	  HAL_Delay(10);
-
 	  //up down
 	  if(value[0] > value[1]){
 		  CH1_DC += 100;
@@ -243,7 +244,7 @@ int main(void)
 
 	  TIM2->CCR1 = CH1_DC;
 	  TIM2->CCR2 = CH2_DC;
-	  */
+
 
 
 	  /*
